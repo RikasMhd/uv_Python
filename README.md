@@ -37,8 +37,8 @@ Clone the repository, change into its folder, and install the project and its
 dependencies:
 
 ```cmd
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-cd YOUR-REPOSITORY
+git clone https://github.com/RikasMhd/uv_Python.git
+cd https://github.com/RikasMhd/uv_Python.git
 uv sync
 ```
 
