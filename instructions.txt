@@ -1,0 +1,65 @@
+PS S:\UV_python> pip install uv
+Collecting uv
+  Downloading uv-0.13.7-py3-none-win_amd64.whl (15.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.3/15.3 MB 1.2 MB/s eta 0:00:00
+Installing collected packages: uv
+Successfully installed uv-0.13.7
+
+[notice] A new release of pip is available: 23.0.1 -> 26.3
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+PS S:\UV_python> uv init
+Initialized project `uv-python`
+
+PS S:\UV_python> uv venv
+Using CPython 3.10.11 interpreter at: C:\Users\Dell\AppData\Local\Programs\Python\Python310\python.exe
+Creating virtual environment at: .venv
+Activate with: .venv\Scripts\activate
+
+PS S:\UV_python> .venv\Scripts\activate
+(UV_python) PS S:\UV_python> uv add python-dotenv
+Resolved 2 packages in 50.27s
+      Built uv-python @ file:///S:/UV_python                                                                                                                                  
+Prepared 2 packages in 1.58s
+░░░░░░░░░░░░░░░░░░░░ [0/2] Installing wheels...warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 2 packages in 67ms
+ + python-dotenv==1.2.4
+ + uv-python==0.1.0 (from file:///S:/UV_python)
+
+(UV_python) PS S:\UV_python> uv add -r requirements.txt
+Resolved 35 packages in 11.62s
+      Built uv-python @ file:///S:/UV_python                                                                                                                                  
+Prepared 21 packages in 2m 17s
+Uninstalled 1 package in 23ms
+░░░░░░░░░░░░░░░░░░░░ [0/21] Installing wheels...warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 21 packages in 13.75s
+ + cloudpickle==3.1.2
+ + contourpy==1.3.2
+ + cycler==0.12.1
+ + fonttools==4.65.0
+ + joblib==1.6.0
+ + kiwisolver==1.5.1
+ + matplotlib==3.10.9
+ + numpy==2.2.6
+ + packaging==26.3
+ + pandas==2.3.3
+ + pillow==12.3.0
+ + pyparsing==3.3.3
+ + python-dateutil==3.0.0
+ + pytz==2026.6
+ + scikit-learn==1.7.2
+ + scipy==1.15.3
+ + seaborn==0.13.2
+ + six==1.17.0
+ + threadpoolctl==3.8.0
+ + tzdata==2026.6
+ ~ uv-python==0.1.0 (from file:///S:/UV_python)
+(UV_python) PS S:\UV_python> uv pip install numpy
+Checked 1 package in 42ms
+(UV_python) PS S:\UV_python> uv pip install -r requirements.txt
+Checked 5 packages in 470ms
+(UV_python) PS S:\UV_python> 
